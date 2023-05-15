@@ -17,7 +17,7 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Table paymentHistory={paymentHistory} />
+      {paymentHistory && <Table paymentHistory={paymentHistory} />}
     </div>
   );
 }
